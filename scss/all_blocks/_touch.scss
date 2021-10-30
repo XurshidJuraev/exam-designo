@@ -1,0 +1,93 @@
+.touch{
+    background-image: url("./../images/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1111px;
+    height: 292px;
+    margin-top: 160px;
+    position: absolute;
+    top: 2160px;
+}
+.touch_text{
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    width: 459px;
+    height: 78px;
+}
+.touch_heading-two{
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+    width: 268px;
+    height: 98px;
+}
+.touch_flex{
+    display: flex;
+    justify-content: space-between;
+}
+.touch-left{
+    margin-top: 30px;
+    margin-left: 95px;
+}
+.fridge{
+    margin-top: 116px;
+    margin-right: 96px;
+}
+@media only screen and (max-width: 768px) {
+    .touch{
+        width: 690px;
+        height: 350px;
+        top: 2530px;
+        border-radius: 15px;
+    }
+    .touch_flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .touch_heading-two{
+        width: 335px;
+        height: 98px;
+        margin-left: 100px;
+        margin-top: 15px;
+        text-align: center;
+
+    }
+    .touch_text{
+        width: 573px;
+        height: 52px;
+        text-align: center;
+        margin-left: -30px;
+    }
+    .fridge{
+        margin-top: 10px;
+        margin-left: 272px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .touch{
+        width: 327px;
+        height: 379px;
+        top: 3240px;
+        border-radius: 15px;
+    }
+    .touch_heading-two{
+        width: 279px;
+        height: 82px;
+        margin-left: -50px;
+    }
+    .touch_text{
+        width: 279px;
+        height: 75px;
+        margin-left: -60px;
+    }
+    .fridge{
+        margin-left: 100px;
+    }
+}

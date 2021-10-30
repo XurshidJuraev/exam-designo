@@ -1,0 +1,67 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+    margin-bottom: 67px;
+}
+.header__list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.header_item{
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    color: $dark_grey;
+    padding-left: 21px;
+    padding-right: 21px;
+    text-decoration: none;
+}
+
+.header__link{
+    color: $dark_grey;
+    text-decoration: none;
+}
+
+.header_item:hover{
+    border-bottom: 1px solid $dark_grey;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.logo{
+    margin-top: 3px;
+    margin-right: 150px;
+}
+@media only screen and (max-width: 768px) {
+    .header{
+        max-width: 689px;
+        min-width: 650px;
+
+    }
+    .header__list{
+        margin-left: -100px;
+        margin-top: 15px;
+    }
+    .logo{
+        margin-right: 50px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .header__list{
+        display: none;
+    }
+    .hamburger{
+        background-image: url("./../images/hamburger.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        width: 24px;
+        height: 20px;
+    }
+    
+}

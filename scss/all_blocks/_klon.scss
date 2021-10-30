@@ -1,0 +1,135 @@
+.klon{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;  
+    margin-bottom: 160px;
+}
+.klon_left{
+    background-image: url("./../images/mac.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 540px;
+    height: 641px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.klon-right{
+    display: flex;
+    margin-left: 15px;
+    flex-direction: column;
+}
+.klon_right-top{
+    background-image: url("./../images/shazam.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 540px;
+    height: 308px;
+    margin-bottom: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.klon_right-bottom{
+    background-image: url("./../images/corusel.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 540px;
+    height: 308px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.klon__left_heading-three{
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 2px;
+    color: $white;
+}
+.klon__left_text{
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: $white;
+    margin-top: -25px;
+    opacity: 0.8;
+}
+.klon__right-top_heading-three , .klon__right-bottom_heading-three{
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: $white;
+}
+.klon__right-top_text , .klon__right-bottom_text{
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: $white;
+    margin-top: -25px;
+    opacity: 0.8;
+}
+@media only screen and (max-width: 768px) {
+    .klon_left {
+        width: 689px;
+        height: 200px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+    }
+    .klon_right-top{
+        width: 689px;
+        height: 200px;
+        margin-left: -20px;
+        border-radius: 15px;
+    }
+    .klon_right-bottom{
+        width: 689px;
+        height: 200px;
+        margin-left: -20px;
+        border-radius: 15px;
+    }
+    .klon{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media only screen and (max-width: 375px) {
+    .klon_left {
+        width: 327px;
+        height: 250px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+    }
+    .klon_right-top{
+        width: 327px;
+        height: 250px;
+        border-radius: 15px;
+    }
+    .klon_right-bottom{
+        width: 327px;
+        height: 250px;
+        border-radius: 15px;
+    }
+}

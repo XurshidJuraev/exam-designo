@@ -1,0 +1,137 @@
+.hero{
+    background-image: url("./../images/hero_banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 640px;
+    width: 1111px;
+    margin-bottom: 160px;
+}
+.button{
+    height: 56px;
+    width: 152px;
+    background-color: $white;
+    border-radius: 8px;
+    border: none;
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $dark_grey;
+    margin-top: 16px; 
+}
+.button:hover{
+    background-color: $light_peach;
+    transition: all 0.3s ease;
+    color: $white;
+    cursor: pointer;
+}
+.hero__heding-one{
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 48px;
+    color: $white;
+}
+.hero__text{
+    font-family: "Jost";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: $white;
+    width: 445px;
+    height: 78px;
+}
+.hero__one{
+    display: flex;
+    justify-content: space-between;
+}
+.hero_left{
+    width: 540px;
+    height: 350px;
+    margin-top: 145px;
+    margin-left: 95px;
+}
+.hero_right{
+    margin-top: 20px;
+}
+@media only screen and (max-width: 768px) {
+    .hero{
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 689px;
+        min-height: 843px;
+        background-image: url("./../images/hero_banner-768.png");
+    }
+    .hero__one{
+        flex-direction: column;
+        display: flex;
+    }
+    .hero_left{
+        width: 573px;
+        height: 326px;
+        text-align: center;
+        margin-top: -10px;
+    }
+    .hero__text{
+        margin-left: 20px;
+    }
+    .hero__heding-one{
+        margin-left: -33px;
+        min-height: 165px;
+    }
+    .hero_right{
+        display: none;
+
+    }
+    .hero_minimum{
+        background-image: url("./../images/iphone.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 573px;
+        width: 273px;
+        margin-top: 150px;
+        margin-left: 200px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .hero{
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 375px;
+        min-height: 843px;
+        background-image: url("./../images/mobile.png");
+    }
+    .hero__heding-one{
+        width: 327px;
+        height: 118px;  
+        margin-bottom: 90px;
+        margin-left: 0px;
+    }
+    .hero__text{
+        width: 327px;
+        height: 100px;
+        margin-left: 1px;
+    }
+    .hero_left{
+        width: 327px;
+        height: 312px;
+        text-align: center;
+        margin-top: -10px;
+        margin-left: 20px;
+    }
+    .hero_minimum{
+        background-image: url("./../images/mobile_iphone.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        min-height: 573px;
+        width: 273px;
+        margin-top: 184px;
+        margin-left: 47px;
+    }
+}
+
